@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>amir_tirmax_shop — فروشگاه موس ایرانی</title>
+  <meta name="description" content="فروشگاه تک‌صفحه‌ای amir_tirmax_shop — خرید آنلاین موس‌های ایرانی با بهترین کیفیت و قیمت.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0; font-family:'Vazirmatn',sans-serif; background:#f8fafc; color:#0f172a;}
+    header {background:#ef4444; color:#fff; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:50;}
+    header h1 {margin:0; font-size:20px; font-weight:800;}
+    nav a {color:#fff; margin-right:14px; text-decoration:none; font-weight:600;}
+    .hero {padding:60px 20px; text-align:center; background:#fee2e2;}
+    .hero h2 {margin:0 0 10px; font-size:28px;}
+    .hero p {margin:0; color:#444;}
+    section {padding:60px 20px; max-width:1200px; margin:auto;}
+    h2.section-title {margin-top:0; font-size:24px; text-align:center; margin-bottom:30px;}
+    .products {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
+    .product {background:#fff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.05); overflow:hidden; display:flex; flex-direction:column;}
+    .product img {width:100%; height:180px; object-fit:cover;}
+    .product-info {padding:14px; flex:1; display:flex; flex-direction:column; justify-content:space-between;}
+    .product-info h3 {margin:0 0 10px; font-size:18px;}
+    .product-info p {margin:0 0 12px; color:#475569; font-size:14px;}
+    .price {font-weight:700; color:#ef4444; margin-bottom:12px;}
+    .btn {background:#ef4444; color:#fff; border:none; padding:10px; border-radius:8px; cursor:pointer; font-weight:600; text-align:center;}
+    footer {text-align:center; padding:20px; background:#f1f5f9; margin-top:40px; color:#475569; font-size:14px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>amir_tirmax_shop</h1>
+    <nav>
+      <a href="#products">محصولات</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>فروشگاه موس ایرانی</h2>
+    <p>بهترین موس‌های ایرانی با کیفیت بالا و قیمت مناسب، فقط در amir_tirmax_shop</p>
+  </section>
+
+  <section id="products">
+    <h2 class="section-title">موس‌های ایرانی موجود</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b1b?q=80&w=800&auto=format&fit=crop" alt="موس تسکو TSCO">
+        <div class="product-info">
+          <h3>موس تسکو TSCO TM-202</h3>
+          <p>موس سیمی ایرانی با کیفیت عالی و طراحی ارگونومیک.</p>
+          <div class="price">۲۵۰,۰۰۰ تومان</div>
+          <button class="btn">افزودن به سبد</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?q=80&w=800&auto=format&fit=crop" alt="موس فراسو Farassoo">
+        <div class="product-info">
+          <h3>موس فراسو FOM-350</h3>
+          <p>موس بی‌سیم ایرانی با عمر باتری طولانی.</p>
+          <div class="price">۳۲۰,۰۰۰ تومان</div>
+          <button class="btn">افزودن به سبد</button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e6?q=80&w=800&auto=format&fit=crop" alt="موس جنیوس ایرانی مونتاژ">
+        <div class="product-info">
+          <h3>موس جنیوس مونتاژ ایران</h3>
+          <p>موس بی‌سیم سبک با دقت بالا مناسب کار روزمره.</p>
+          <div class="price">۲۸۰,۰۰۰ تومان</div>
+          <button class="btn">افزودن به سبد</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">تماس با ما</h2>
+    <p style="text-align:center;">برای سفارش یا اطلاعات بیشتر با ما تماس بگیرید: <br> 📞 0912-000-0000 | ✉️ info@amir_tirmax_shop.ir</p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> amir_tirmax_shop — تمام حقوق محفوظ است.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
